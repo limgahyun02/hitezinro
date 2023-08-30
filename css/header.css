@@ -70,6 +70,7 @@ header .wrap nav h1 a span {
 }
 header .wrap nav ul.gnb {
   width: 70%;
+  color: #42454a;
 }
 header .wrap nav ul.gnb li {
   
@@ -90,6 +91,7 @@ header .wrap nav ul.gnb li a:hover{
 header .wrap nav ul.enb {
   width: calc(30% - 55px);
   justify-content: end;
+  color: #b2b2b2;
 }
 header .wrap nav ul.enb li {
   
@@ -101,9 +103,9 @@ header .wrap nav  ul.enb li a {
   position: relative;
   font-weight: 300;
 }
-header .wrap nav  ul.enb li a:hover {
-  color: blue;
-}
+header .wrap nav  ul.enb li:nth-child(3) a{
+  color: #48a2ff;
+} 
 header .wrap nav ul.enb li:nth-child(1) a::after,header .wrap nav ul.enb li:nth-child(2) a::after{
   content: "";
   border-right: 1px solid #666;

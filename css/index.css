@@ -125,3 +125,8 @@
 .snsani li.sns9 a::before{
   background-image: url(../img/before9.png);
 }
+
+.snsani li p{
+  
+  color: #7d7d7d;
+}
