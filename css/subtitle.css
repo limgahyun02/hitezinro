@@ -18,6 +18,8 @@ div#subtitle .slick-next{
 div#subtitle .wrap img {
   width: 100%;
 }
+
 div#subtitle .wrap .slick-dots{
-  bottom: 5px;
+  bottom: 40px;
+  z-index: 3;
 }

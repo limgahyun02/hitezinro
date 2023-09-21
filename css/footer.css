@@ -1,15 +1,10 @@
 footer {
+  background-color: #333;
   color: #9a9a9a;
-  padding: 40px 0% 40px 0px;
-  background: #292929;
-  font-size: 15px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 20px;
 }
 footer a{
-  color: #7b7b7b;
+  color: #9a9a9a;
 }
 footer div.wrap {
   max-width: 1200px;
@@ -17,83 +12,35 @@ footer div.wrap {
   grid-template-columns: 80% 1fr;
   grid-template-rows: auto 1fr 1fr;
   row-gap: 13px;
+  position: relative;
 }
 footer div.wrap ul.fnb {
   grid-column: 1 / span 2;
+  text-align: center;
   justify-content: center;
-  padding-bottom: 60px;
-  color: #7b7b7b;
+  gap: 116px;
+  position: relative;
 }
 footer div.wrap ul.fnb li {
-  width: calc(170% / 5);
-}
-footer div.wrap ul.fnb li:nth-child(1) ul {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-}
-footer div.wrap ul.fnb li:nth-child(1) ul li{
-  width: calc(100% / 2);
-}
-footer div.wrap ul.fnb li:nth-child(1) ul li:nth-child(1){
-  order: 1;
-}
-footer div.wrap ul.fnb li:nth-child(1) ul li:nth-child(2){  
-  order: 3;
-}
-footer div.wrap ul.fnb li:nth-child(1) ul li:nth-child(3){  
-  order: 5;
-}
-footer div.wrap ul.fnb li:nth-child(1) ul li:nth-child(4){ 
-  order: 7;
-}
-footer div.wrap ul.fnb li:nth-child(1) ul li:nth-child(5){  
-  order: 9;
-}
-footer div.wrap ul.fnb li:nth-child(1) ul li:nth-child(6){  
-  order: 2;
-}
-footer div.wrap ul.fnb li:nth-child(1) ul li:nth-child(7){
-  order: 4;
-}
-footer div.wrap ul.fnb li:nth-child(1) ul li:nth-child(8){  
-  order: 6;
-}
-footer div.wrap ul.fnb li:nth-child(1) ul li:nth-child(9){  
-  order: 8;
+  
 }
 footer div.wrap ul.fnb li a {
   padding-right: 10px;
   display: block;
   line-height: 1.2;
 }
-footer div.wrap ul.fnb .sublist{
+footer div.wrap ul.fnb2{ 
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 20px;
-  max-width: 258px;
-}
-footer div.wrap ul.fnb .sublist li{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer div.wrap ul.fnb2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  width: 1070px;
-  margin: 0 auto;
-  gap: 14px;
-  border: 1px solid #fff;
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  border-width: 1px 0;
+  align-items: center;
+  position: absolute;
+  top: 265px;
+  right: 50px;
+  gap: 13px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  line-height: 1.5;
 }
 footer div.wrap ul.fnb2 li:nth-child(1) a{
   color: #0d5ffb;
@@ -105,22 +52,63 @@ footer div.wrap ul.fnb2 li:nth-child(9) a{
   color: #adadad;
 }
 footer div.wrap address {
+  
   line-height: 1.4;
-  grid-column: 1 / span 2;
-  padding-top: 5px;
+  bottom: 125px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #545454;
+  position: absolute;
+  right: 180px;
+  top: 302px;
+  color: #4e4e4e;
+}
+footer div.wrap address a {
+  
 }
 footer div.wrap p.copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  right: -90px;
-  position: relative;
-  color: #545454;
+  
+  position: absolute;
+  top: 324px;
+  right: 365px;
+  color: #4e4e4e;
+}
+footer div.wrap div.corp {
+  grid-row: 2 / span 2;
+  grid-column: 2 / span 1;
+}
+footer div.wrap div.corp h2 {
+  
+}
+footer div.wrap div.corp ul {
+  
+}
+footer div.wrap div.corp ul li {
+  
+}
+footer div.wrap div.corp ul li a {
+  
+  /*! display: flex; */
+  /*! flex-direction: column; */
+  /*! align-items: center; */
+}
+footer div.wrap div.corp ul li a::before{
+  content: "";
+  width: 63px;
+  height: 30px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: -11px;
+  margin-right: 16px;
+}
+footer div.wrap div.corp ul li:nth-child(1) a::before {
+  background-image: url(../img/corp1.svg);
+}
+footer div.wrap div.corp ul li:nth-child(2) a::before {
+  background-image: url(../img/corp2.svg);
+}
+footer div.wrap div.corp ul li:nth-child(3) a::before {
+  background-image: url(../img/corp3.svg);
 }
 footer .btop{
   width: 80px;

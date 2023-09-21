@@ -1,91 +1,103 @@
+main{
+  
+}
+#product .wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#product .wrap h2{
+  width: 1060px;
+  margin-bottom: 20px;
+  color: #363749;
+}
 #product ul.list{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto auto;
   grid-template-rows: 1fr 1fr 1fr;
-  height: 925px;
 }
 #product ul.list li{
-  margin: 5px;
-}
-#product ul.list li h3{
-   font-size: 0;
-}
-#product ul.list li p{
- display: none;
-}
-#product ul.list li a{
-  display: none;
+  /*! border: 1px solid; */
+  position: relative;
 }
 #product ul.list li:nth-child(1){
   order: 1;
-  grid-column:1;
-  background-image: url(../img/img1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  /*! grid-column: 1; */
 }
 #product ul.list li:nth-child(2){
   grid-row: 1 / span 2;
   order: 2;
-  grid-column: 2;   /* 아이템 몇 번쨰 열에 배치될지 지점 */
-  background-image: url(../img/img2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  grid-column: 2; /*  아이템이 몇 번째 열에 배치될지 지정 */
 }
 #product ul.list li:nth-child(3){
   order: 3;
-  background-image: url(../img/img3.jpg);
-  background-size: cover;
-  background-position: center;
 }
 #product ul.list li:nth-child(4){
-   order: 4;
-   background-image: url(../img/img4.jpg);
-   background-size: cover;
-   background-position: center;
+  order: 4;
 }
 #product ul.list li:nth-child(5){
-   order: 5;
-   background-image: url(../img/img5.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-  background-position: center;
+  order: 5;
 }
 #product ul.list li:nth-child(6){
-   order: 6;
-   grid-column: 3 / span 2;
-   background-image: url(../img/img6.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
+  order: 6;
+  grid-column: 3 / span 2;
 }
 #product ul.list li:nth-child(7){
-   order: 7;
-   background-image: url(../img/img7.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-  background-position: center;
+  
+  order: 7;
 }
 #product ul.list li:nth-child(8){
-   order: 8;
-   grid-column: 2 / span 2;
-   background-image: url(../img/img8.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
+  order: 8;
+  grid-column: 2 / span 2;
 }
 #product ul.list li:nth-child(9){
-   order: 9;
-   background-image: url(../img/img9.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
+  order: 9;
+}
+#product ul.list li figure{
+  
+}
+#product ul.list li h3{
+  color: white;
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  font-size: 30px;
+}
+#product ul.list li .wrapText{
+  position: absolute;
+  left: 0;
+  top:0;
+  background-color: rgba(0,0,255,0.5);
+  width: 0%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+#product ul.list li .wrapText>*{
+  color: white;
+}
+
+#product ul.list li .wrapText p{
+  
+}
+#product ul.list li .wrapText a{
+  
+}
+#sns {
+  
+}
+#sns h2{
+  line-height: 2;
 }
 .snsani li a{
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows:auto 1fr; 
   column-gap: 22px;
-  
 }
 .snsani li a::before{
   content: "";
@@ -99,34 +111,29 @@
   grid-row: 1 / span 2;
 }
 .snsani li.sns1 a::before{
-  background-image: url(../img/before1.png);
+  background-image: url(../img/1.png);
 }
 .snsani li.sns2 a::before{
-  background-image: url(../img/before2.png);
+  background-image: url(../img/2.png);
 }
 .snsani li.sns3 a::before{
-  background-image: url(../img/before3.png);
+  background-image: url(../img/3.png);
 }
 .snsani li.sns4 a::before{
-  background-image: url(../img/before4.png);
+  background-image: url(../img/4.png);
 }
 .snsani li.sns5 a::before{
-  background-image: url(../img/before5.png);
+  background-image: url(../img/5.png);
 }
 .snsani li.sns6 a::before{
-  background-image: url(../img/before6.png);
+  background-image: url(../img/2.png);
 }
 .snsani li.sns7 a::before{
-  background-image: url(../img/before7.png);
+  background-image: url(../img/6.png);
 }
 .snsani li.sns8 a::before{
-  background-image: url(../img/before8.jpg);
+  background-image: url(../img/7.png);
 }
 .snsani li.sns9 a::before{
-  background-image: url(../img/before9.png);
-}
-
-.snsani li p{
-  
-  color: #7d7d7d;
+  background-image: url(../img/8.png);
 }

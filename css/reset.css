@@ -55,7 +55,7 @@ p,div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input
     word-break:keep-all;
 }
 /* 익스플로러 하위 버전에서 a > img일 경우 보더가 생김 */
-img,fieldset{border:0}
+img,fieldset{border:0;}
 legend{
     position:absolute;
     left:-9999px;

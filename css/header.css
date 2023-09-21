@@ -11,7 +11,6 @@ header {
   }
 }
 header .wrap {
-  /*! height: 100px; */
   position: relative;
 }
 @keyframes widthfull{
@@ -35,19 +34,20 @@ header .wrap nav h1 {
   text-align: center;
   display: flex;
   justify-content: center;
-  color: darkgray;
 }
 header .wrap nav h1::before{
  content: "";  
- width: 23px;
+ width: 21px;
  height: 40px;
  display: block;
- background-image: url(../img/logo.png);
+ background-image: url(../img/hite.png);
  background-repeat: no-repeat;
  background-position: center;
  margin-right: 7px;
 }
-
+header .wrap nav h1:hover::before{
+  width: 120%;
+}
 header .wrap nav h1 a {
   color: #109ad6;
   height: 100%;
@@ -69,8 +69,8 @@ header .wrap nav h1 a span {
   margin-left: 15px;
 }
 header .wrap nav ul.gnb {
+  
   width: 70%;
-  color: #42454a;
 }
 header .wrap nav ul.gnb li {
   
@@ -85,27 +85,28 @@ header .wrap nav ul.gnb li a {
 }
 header .wrap nav ul.gnb li a:hover{
   background-color: #ccc;
-  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
 }
+
 /* 기타메뉴 */
 header .wrap nav ul.enb {
+  
   width: calc(30% - 55px);
   justify-content: end;
-  color: #b2b2b2;
 }
 header .wrap nav ul.enb li {
   
 }
-header .wrap nav  ul.enb li a {
+header .wrap nav ul.enb li:nth-child(3) a{
+  color: #409eff;
+}
+header .wrap nav ul.enb li a {
   padding: 0 9px;
   line-height: 2;
   display: inline-block;
   position: relative;
   font-weight: 300;
 }
-header .wrap nav  ul.enb li:nth-child(3) a{
-  color: #48a2ff;
-} 
 header .wrap nav ul.enb li:nth-child(1) a::after,header .wrap nav ul.enb li:nth-child(2) a::after{
   content: "";
   border-right: 1px solid #666;
@@ -114,10 +115,4 @@ header .wrap nav ul.enb li:nth-child(1) a::after,header .wrap nav ul.enb li:nth-
   position: absolute;
   right: 0;
   top: calc(50% - 3px);
-}
-header .wrap nav div form.search {
-  
-}
-header .wrap nav div form.search button {
-  
 }
